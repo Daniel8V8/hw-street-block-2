@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Street Block | CSS</title>
+    <style>
+      body {
+        background-color: #223;
+        width: 1500px;
+      }
+      .street {
+        border: 1px dotted red;
+        height: 320px;
+      }
+      .house {
+        height: 150px;
+        width: 100px;
+        display: inline-block;
+      }
+      .building-tall {
+        background-color: white;
+        display: inline-block;
+        height: 300px;
+        width: 100px;
+        margin-bottom: -4px;
+        background-image: linear-gradient(
+          307deg,
+          rgb(1, 21, 34),
+          rgb(79, 79, 44)
+        );
+      }
+
+      .h-line1 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(28px);
+      }
+      .h-line2 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(56px);
+      }
+      .h-line3 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(84px);
+      }
+      .h-line4 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(112px);
+      }
+      .h-line5 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(140px);
+      }
+      .h-line6 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(168px);
+      }
+      .h-line7 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(196px);
+      }
+      .h-line8 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(224px);
+      }
+      .h-line9 {
+        width: inherit;
+        height: 2px;
+        background-image: linear-gradient(
+          296deg,
+          rgb(94, 132, 155),
+          rgb(255, 255, 213)
+        );
+        /* border-top: 2px solid white;*/
+        transform: translateY(252px);
+      }
+
+      .cloud {
+        display: inline-block;
+        width: 50px;
+        /* background-color: beige;*/
+        vertical-align: top;
+        padding-left: 20px;
+        padding-top: 50px;
+      }
+      .cloud2 {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+        transform: translateX(-300px) translateY(50px);
+      }
+      .sun {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+        transform: translateX(-280px) translateY(5px);
+      }
+      .hotel-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(14, 158, 194);
+        display: inline-block;
+        transform: translateX(15px) translateY(-207px);
+      }
+      .hotel1 {
+        background-color: rgb(23, 75, 164);
+        width: 50px;
+        height: 180px;
+        display: inline-block;
+        margin-bottom: -4px;
+
+        transform: translateX(-120px) translateY(0px);
+      }
+      .hotel2 {
+        background-color: rgb(48, 101, 191);
+        width: 100px;
+        height: 200px;
+        display: inline-block;
+        margin-bottom: -4px;
+        margin-left: -4px;
+        margin-right: -4px;
+        transform: translateX(-125px) translateY(0px);
+      }
+      .hotel3 {
+        background-color: rgb(23, 75, 164);
+        width: 50px;
+        height: 180px;
+        display: inline-block;
+        margin-bottom: -4px;
+        transform: translateX(-125px) translateY(0px);
+      }
+      .hotel-roof {
+        background-color: rgb(155, 188, 246);
+        width: 110px;
+        height: 8px;
+        display: inline-block;
+        transform: translateX(-284px) translateY(-195px);
+      }
+      .hotel-roof2 {
+        background-color: rgb(155, 188, 246);
+        width: 55px;
+        height: 8px;
+        display: inline-block;
+        transform: translateX(-293px) translateY(-175px);
+      }
+      .hotel-roof3 {
+        background-color: rgb(155, 188, 246);
+        width: 100px;
+        height: 5px;
+        display: inline-block;
+        transform: translateX(-452px) translateY(-200px);
+      }
+      .hotel-roof4 {
+        background-color: rgb(155, 188, 246);
+        width: 55px;
+        height: 8px;
+        display: inline-block;
+        transform: translateX(-611px) translateY(-175px);
+      }
+      .entrance-roof {
+        background-color: rgb(155, 188, 246);
+        width: 100px;
+        height: 5px;
+        display: inline-block;
+        transform: translateX(-615px) translateY(-50px);
+      }
+      .hotel-entrance {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+        border: 3px solid rgb(179, 190, 210);
+        width: 20px;
+        height: 40px;
+        margin: 0px;
+        transform: translateX(425px) translateY(-46px);
+      }
+      .hotel-window {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(400px) translateY(-230px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window2 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(450px) translateY(-263px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window3 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(400px) translateY(-230px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window4 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(450px) translateY(-263px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window5 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(355px) translateY(-330px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window6 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(355px) translateY(-310px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window7 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(355px) translateY(-290px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window8 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(495px) translateY(-430px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window9 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(495px) translateY(-410px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .hotel-window10 {
+        width: 20px;
+        height: 30px;
+        border: 2px solid rgb(179, 190, 210);
+        transform: translateX(495px) translateY(-390px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(2, 106, 170),
+          rgb(184, 184, 177)
+        );
+      }
+      .tree {
+        display: inline-block;
+        transform: translateX(-380px) translateY(-200px);
+      }
+      .tree2 {
+        display: inline-block;
+        transform: translateX(-180px) translateY(-200px);
+      }
+
+      .building-small {
+        background-color: beige;
+        display: inline-block;
+      }
+      .house-roof {
+        height: 0px;
+        width: 0px;
+
+        border: 50px solid white;
+        border-top-width: 0px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: brown;
+        border-bottom-width: 70px;
+      }
+      .roof-window {
+        border: 10px solid white;
+        border-top-width: 0px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(180, 217, 240);
+        border-bottom-width: 20px;
+
+        width: 0px;
+        height: 0px;
+        transform: translateX(-27px) translateY(25px);
+      }
+      .horn-v {
+        background-color: brown;
+        width: 10px;
+        height: 30px;
+        transform: translateX(20px) translateY(15px);
+      }
+      .horn-h {
+        background-color: brown;
+        width: 16px;
+        height: 5px;
+        transform: translateX(-3px) translateY(-5px);
+      }
+
+      .house-wall {
+        background-color: antiquewhite;
+        height: 80px;
+        border-left: 5px solid rgb(190, 190, 190);
+        border-right: 5px solid rgb(190, 190, 190);
+        border-bottom: 5px solid rgb(190, 190, 190);
+      }
+      .house-window {
+        width: 30px;
+        height: 30px;
+        border: 2px solid brown;
+        transform: translateX(27px) translateY(23px);
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(0, 157, 255),
+          rgb(255, 255, 213)
+        );
+      }
+
+      .window-section-v {
+        border-right: 2px solid brown;
+        height: inherit;
+        width: 14px;
+      }
+      .window-section-h {
+        border-top: 2px solid brown;
+        height: 5px;
+        width: 30px;
+        transform: translateX(0px) translateY(14px);
+      }
+      .grass {
+        transform: translateX(-165px) translateY(-250px);
+      }
+      .bank-wall {
+        background-color: rgb(248, 163, 83);
+        height: 100px;
+        width: 200px;
+        display: inline-block;
+        transform: translateX(600px) translateY(-495px);
+        margin-bottom: -4px;
+      }
+      .bank-wall-bottom {
+        background-color: rgb(204, 99, 0);
+        height: 30px;
+        width: 230px;
+        display: inline-block;
+        transform: translateX(380px) translateY(-465px);
+      }
+      .bank-wall-top {
+        background-color: rgb(204, 99, 0);
+        height: 10px;
+        width: 230px;
+        display: inline-block;
+        transform: translateX(145px) translateY(-590px);
+      }
+      .bank-roof {
+        height: 0px;
+        width: 0px;
+
+        border: 100px solid white;
+        border-top-width: 0px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(240, 138, 43);
+        border-bottom-width: 80px;
+        display: inline-block;
+        transform: translateX(-72px) translateY(-600px);
+      }
+      .bank-roof-borderL {
+        background-color: rgb(204, 99, 0);
+        height: 7px;
+        width: 130px;
+        display: inline-block;
+        transform: translateX(-290px) translateY(-635px) rotate(-39deg);
+      }
+      .bank-roof-borderR {
+        background-color: rgb(204, 99, 0);
+        height: 7px;
+        width: 130px;
+        display: inline-block;
+        transform: translateX(-327px) translateY(-635px) rotate(39deg);
+      }
+      .bank-name {
+        color: rgb(77, 46, 1);
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        transform: translateX(-472px) translateY(-605px);
+      }
+      .bank-logo {
+        display: inline-block;
+        transform: translateX(163px) translateY(-380px);
+      }
+      .logo-size {
+        height: 30px;
+        width: 30px;
+      }
+      .bank-entrance {
+        display: inline-block;
+        background-color: rgb(240, 138, 43);
+        height: 80px;
+        width: 60px;
+        border-top: 3px solid brown;
+        border-right: 3px solid brown;
+        border-left: 3px solid brown;
+        transform: translateX(505px) translateY(-249px);
+      }
+      .bank-door {
+        display: inline-block;
+        background-color: rgb(65, 31, 0);
+        height: 50px;
+        width: 25px;
+        transform: translateX(456px) translateY(-249px);
+      }
+      .bank-doorB {
+        display: inline-block;
+        background-color: brown;
+        height: 4px;
+        width: 60px;
+        transform: translateX(409px) translateY(-305px);
+      }
+      .window-left {
+        display: inline-block;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(5, 131, 209),
+          rgb(255, 255, 213)
+        );
+        border: 3px solid brown;
+        height: 60px;
+        width: 40px;
+        transform: translateX(280px) translateY(-265px);
+      }
+      .window-right {
+        display: inline-block;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(5, 131, 209),
+          rgb(255, 255, 213)
+        );
+        border: 3px solid brown;
+        height: 60px;
+        width: 40px;
+        transform: translateX(377px) translateY(-265px);
+      }
+      .frame-left1 {
+        display: inline-block;
+        background-color: brown;
+        height: 2px;
+        width: 40px;
+        transform: translateX(186px) translateY(-300px);
+      }
+      .frame-left2 {
+        display: inline-block;
+        background-color: brown;
+        height: 60px;
+        width: 2px;
+        transform: translateX(160px) translateY(-267px);
+}
+.frame-right1 {
+  display: inline-block;
+        background-color: brown;
+        height: 2px;
+        width: 40px;
+        transform: translateX(281px) translateY(-300px);
+}
+.frame-right2 {
+  display: inline-block;
+        background-color: brown;
+        height: 60px;
+        width: 2px;
+        transform: translateX(256px) translateY(-267px);
+}
+     
+    </style>
+  </head>
+  <body>
+    <div class="street">
+      <div class="house">
+        <div class="house-roof">
+          <div class="horn-v">
+            <div class="horn-h">
+              <div class="roof-window"></div>
+            </div>
+          </div>
+        </div>
+        <div class="house-wall">
+          <div class="house-window">
+            <div class="window-section-v">
+              <div class="window-section-h"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="building-tall">
+        <div class="h-line1"></div>
+        <div class="h-line2"></div>
+        <div class="h-line3"></div>
+        <div class="h-line4"></div>
+        <div class="h-line5"></div>
+        <div class="h-line6"></div>
+        <div class="h-line7"></div>
+        <div class="h-line8"></div>
+        <div class="h-line9"></div>
+      </div>
+      <div class="cloud">
+        <img
+          src="img/Google-Noto-Emoji-Travel-Places-42659-cloud.48.png"
+          alt="clod"
+        />
+      </div>
+      <div class="sun">
+        <img src="img/Status-weather-clear-icon.png" alt="clod" />
+      </div>
+      <div class="cloud2">
+        <img
+          src="img/Google-Noto-Emoji-Travel-Places-42659-cloud.48.png"
+          alt="sun"
+        />
+      </div>
+      <div class="hotel-name">HOTEL</div>
+      <div class="hotel1"></div>
+      <div class="hotel2"></div>
+      <div class="hotel3"></div>
+      <div class="hotel-roof"></div>
+      <div class="hotel-roof2"></div>
+      <div class="hotel-roof3"></div>
+      <div class="hotel-roof4"></div>
+      <div class="entrance-roof"></div>
+      <div class="hotel-entrance"></div>
+      <div class="hotel-window"></div>
+      <div class="hotel-window2"></div>
+      <div class="hotel-window3"></div>
+      <div class="hotel-window4"></div>
+      <div class="hotel-window5"></div>
+      <div class="hotel-window6"></div>
+      <div class="hotel-window7"></div>
+      <div class="hotel-window8"></div>
+      <div class="hotel-window9"></div>
+      <div class="hotel-window10"></div>
+
+      <div class="bank-wall"></div>
+      <div class="bank-wall-bottom"></div>
+      <div class="bank-wall-top"></div>
+      <div class="bank-roof"></div>
+      <div class="bank-roof-borderL"></div>
+      <div class="bank-roof-borderR"></div>
+      <div class="bank-name">BANK</div>
+      <div class="bank-logo">
+      <div class="bank-entrance"></div>
+      <div class="bank-door"></div>
+      <div class="bank-doorB"></div>
+      <div class="window-left"></div>
+      <div class="window-right"></div>
+      <div class="frame-left1"></div>
+      <div class="frame-left2"></div>
+      <div class="frame-right1"></div>
+      <div class="frame-right2"></div>
+
+
+       <div class="bank-logo"><img
+          class="logo-size"
+          src="img/Custom-Icon-Design-Flatastic-11-Coin-us-dollar.48.png"
+          alt=""
+        />
+        </div>
+
+
+
+      <div class="tree">
+        <img src="img/Tree-icon.png" alt="tree" />
+      </div>
+      <div class="tree2">
+        <img src="img/Palm-Tree-icon.png" alt="tree" />
+      </div>
+
+      <div class="building-small"></div>
+      <div class="grass"><img src="img/grass.png" alt="grass" /></div>
+    </div>
+  </body>
+</html>
